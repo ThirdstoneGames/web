@@ -17,7 +17,6 @@ app.use(function(req, res, next)
 {
     res.writeHead(200, {"Content-Type":"text/html;charset=utf-8"});
     res.end('<h1>서버에서 응답한 결과입니다 : ' + req.name + '</h1>');
-
 })
 
 var server = http.createServer(app);
