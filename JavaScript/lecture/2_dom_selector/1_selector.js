@@ -48,3 +48,60 @@ input.setAttribute('required', '');
 let _hello = document.querySelector(".hello");
 _hello.classList.add('dark', 'yellow');
 _hello.classList.remove('dark','yellow');
+
+
+// 3. createElement, appendChild
+// let element = document.createElement('p');
+// element.textContent = "Added Letter P";
+// document.querySelector('li').appendChild(element);
+
+// 4. createElement, insertBefore
+// let element = document.createElement('li');
+// let insertLocation = document.querySelector(".item");
+// element.textContent = 'Added Equipment';
+// document.querySelector('ul').insertBefore(element, insertLocation );
+
+// 5. dynamic event
+// let dynamicButton = document.getElementById('button');
+// let dynamicButton = document.querySelector('button');
+// dynamicButton.addEventListener('click',function()
+// {
+//     alert('Add??????');
+// });
+
+// 6. dynamic list add
+// let dynamicLi = document.createElement('li');
+// let _button = document.querySelector('button');
+// _button.addEventListener('click', function()
+// {
+//     let _text = document.querySelector('input');
+//     dynamicLi.textContent = _text.value;
+//     document.querySelector('ul').appendChild(dynamicLi);
+//     _text.value="";
+// })
+
+
+let _button = document.querySelector('button');
+_button.addEventListener('click', function()
+{
+    let _text = document.querySelector('input');
+    let dynamicLi = document.createElement('li');
+    dynamicLi.textContent = _text.value;
+    document.querySelector('ul').appendChild(dynamicLi);
+    _text.value="";
+})
+
+let _addedButton = document.createElement('button');
+_addedButton.textContent = '앞에추가';
+_addedButton.type = 'button';
+let _addedButtonLocation = document.querySelector("button");
+document.querySelector("form").insertBefore(_addedButton, _addedButtonLocation);
+
+_addedButton.addEventListener('click', function(){
+    let element1 = document.createElement('li');
+    let location1 = document.querySelector('.item');
+    let textvalue = document.querySelector('input');
+    element1.textContent = textvalue.value;
+    document.querySelector('ul').insertBefore(element1, location1);
+    textvalue.value = "";
+})
