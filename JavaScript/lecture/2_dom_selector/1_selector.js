@@ -32,10 +32,10 @@ console.log(itemAll[2]);
 let input = document.querySelector("input");
 
 input.setAttribute('placeholder', "좋아하는 운동을 입력해주세요");
-input.removeAttribute('placeholder');
+//input.removeAttribute('placeholder');
 
 input.setAttribute('required', '');
-input.removeAttribute('required');
+//input.removeAttribute('required');
 
 
 // HTML 요소 스타일링
