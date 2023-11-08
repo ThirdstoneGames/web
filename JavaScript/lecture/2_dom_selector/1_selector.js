@@ -8,7 +8,7 @@ title.textContent="헬스3대 운동";
 let items = document.getElementsByClassName("item");
 items[1].textContent = "신제품 벤치프레스";
 
-document.getElementsByTagName("li")[0].textContent = "신제품 스쿼트";
+//document.getElementsByTagName("li")[0].textContent = "신제품 스쿼트";
 
 // DOM. HTML 요소 쿼리
 console.log("------------DOM----------");
@@ -104,4 +104,11 @@ _addedButton.addEventListener('click', function(){
     element1.textContent = textvalue.value;
     document.querySelector('ul').insertBefore(element1, location1);
     textvalue.value = "";
+})
+
+let removeTargetBtn = document.querySelector("target-remove");
+
+removeTargetBtn.addEventListener('click', function()
+{
+    document.querySelector('#target').remove();
 })
