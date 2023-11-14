@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="6_event-form.js" defer></script>
+    <title>Event Form</title>
+</head>
+<body>
+    <h2>Input</h2>
+    <input type="text" id="input-box">
+    <!-- fomr 태그 안의 submit Button 을 클릭하면 발생하는 이벤트-->
+    <!-- 제출될 데이터의 유효성을 검사하는 함수와 연계해서 사용-->
+    <form onsubmit="alert('hello');">
+        <input type="text" name="username">
+        <button>submit</button>
+        <img src="../img/noimage.jpg" alt="No image">
+    </form>
+</body>
+</html>

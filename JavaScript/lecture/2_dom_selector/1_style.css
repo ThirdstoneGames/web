@@ -1,3 +1,10 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
 .dark 
 {
     color : white;
@@ -8,4 +15,23 @@
 {
     color : red;
     background-color: yellow;
+}
+
+.rectangle
+{
+    border: 1px solid black;
+    width: 300px;
+    height: 150px;
+    background-color: green;
+}
+
+.circle {
+    width : 50px;
+    height : 50px;
+    background-color: red;
+    border-radius: 50%;
+    position : absolute;
+    /* 이 부분만 JS 로 변경한다면, 클릭한 위치에 원이 오게 할 수 있다.
+    left:500px;
+    top:100px;*/
 }
